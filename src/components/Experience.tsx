@@ -1,25 +1,34 @@
-
 import { Card } from "@/components/ui/card";
 
 const experiences = [
   {
-    company: "Lead Software Engineer",
-    companyName: "Tech Corp",
-    period: "May 2020 - Present",
-    description: "Led development of core features and mentored junior developers."
+    company: "Software Engineering Intern",
+    companyName: "HCSS",
+    period: "Jan 2025 - Present",
+    description:
+      "Redesigned and migrated a company-wide internal form from legacy Razor to React and C#, streamlining product access management for 4,000+ companies.",
   },
   {
-    company: "Software Engineer",
-    companyName: "Innovative Solutions",
-    period: "Jan 2018 - May 2020",
-    description: "Developed and maintained multiple client-facing applications."
+    company: "API Product Management Intern",
+    companyName: "HCSS",
+    period: "Aug 2024 - January 2025",
+    description:
+      "Developed API guides in collaboration with 10+ SMEs, improving the depth and clarity of technical documentation, and streamlined customer workflows across API endpoints — reducing support call volume by 15% through clearer guides like Costs for Cost Code and User Setup.",
   },
   {
-    company: "Software Developer Intern",
-    companyName: "StartUp Inc",
-    period: "Mar 2017 - Jan 2018",
-    description: "Assisted in developing new features and fixing bugs."
-  }
+    company: "Data Structures SEP Workshop Facilitator",
+    companyName: "University of Houston",
+    period: "Dec 2023 - May 2025",
+    description:
+      "Guided 400+ students through an advanced data structures and algorithms curriculum in C++, achieving an 85% pass rate. Created comprehensive study materials and practice problems that boosted exam scores by 10% over the average. Designed and led weekly interactive workshops for 30+ students, incorporating live coding sessions and algorithmic problem-solving exercises.",
+  },
+  {
+    company: "Business Optimization Intern",
+    companyName: "Waste Management",
+    period: "June 2024 - August 2024",
+    description:
+      "Validated service availability across 1,500+ zones on WM.com, preventing inaccurate bulk pickup orders. Improved chatbot performance with AWS Lex and Snowflake analysis. Built 50+ SQL scripts, uncovering a 9.31% increase in chatbot interaction volume from new features.",
+  },
 ];
 
 const Experience = () => {

@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import TechCarousel from "./TechCarousel";
 
@@ -10,12 +9,17 @@ const experiences = [
   },
   {
     title: "Education",
-    content: "Computer Science & MIS",
+    content: (
+      <div>
+        <div>Computer Science & MIS Minor</div>
+        <div className="text-sm text-gray-500 mt-1">GPA: 3.89</div>
+      </div>
+    ),
     className: "md:col-span-1 md:row-span-1",
   },
   {
     title: "Leadership",
-    content: "Tech Club President",
+    content: "SEP Data Structures Facilitator",
     className: "md:col-span-1 md:row-span-1",
   },
 ];
