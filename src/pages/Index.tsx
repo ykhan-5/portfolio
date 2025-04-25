@@ -6,7 +6,7 @@ import Projects from "@/components/Projects";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white bg-noise">
       <Navbar />
       <Hero />
       <BentoGrid />
@@ -16,3 +16,4 @@ const Index = () => {
 };
 
 export default Index;
+
