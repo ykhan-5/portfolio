@@ -1,11 +1,13 @@
 
 import { Card } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
+import TechCarousel from "./TechCarousel";
 
 const BentoGrid = () => {
   const experiences = [
     {
-      title: "Technical Skills",
-      content: "React, TypeScript, Node.js, Python",
+      title: "Technologies",
+      content: <TechCarousel />,
       className: "md:col-span-2 md:row-span-2",
     },
     {
@@ -24,8 +26,17 @@ const BentoGrid = () => {
       className: "md:col-span-1 md:row-span-1",
     },
     {
-      title: "Projects",
-      content: "10+ completed projects",
+      title: "Resume",
+      content: (
+        <a 
+          href="/your-resume.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center text-sky-500 hover:text-sky-600 transition-colors"
+        >
+          View Resume <ArrowRight className="ml-2 w-4 h-4" />
+        </a>
+      ),
       className: "md:col-span-2 md:row-span-1",
     },
   ];
@@ -45,7 +56,7 @@ const BentoGrid = () => {
               <h3 className="font-jakarta font-semibold text-xl mb-2 text-slate-900">
                 {exp.title}
               </h3>
-              <p className="text-slate-600">{exp.content}</p>
+              <div className="text-slate-600">{exp.content}</div>
             </Card>
           ))}
         </div>
