@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,8 +16,12 @@ const Hero = () => {
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg">View Projects</Button>
-            <Button variant="outline" size="lg">
-              Contact Me <ArrowRight className="ml-2 h-4 w-4" />
+            <Button variant="outline" size="lg" asChild>
+              <a href="/your-resume.pdf" target="_blank" rel="noopener noreferrer">
+                <FileText className="mr-2 h-4 w-4" />
+                Resume
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>

@@ -1,41 +1,26 @@
 
 import { Card } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
 import TechCarousel from "./TechCarousel";
 
-const BentoGrid = () => {
-  const experiences = [
-    {
-      title: "Technologies",
-      content: <TechCarousel />,
-      className: "md:col-span-2 md:row-span-2",
-    },
-    {
-      title: "Education",
-      content: "Computer Science & MIS",
-      className: "md:col-span-1 md:row-span-1",
-    },
-    {
-      title: "Leadership",
-      content: "Tech Club President",
-      className: "md:col-span-1 md:row-span-1",
-    },
-    {
-      title: "Resume",
-      content: (
-        <a 
-          href="/your-resume.pdf" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-sky-500 hover:text-sky-600 transition-colors"
-        >
-          View Resume <ArrowRight className="ml-2 w-4 h-4" />
-        </a>
-      ),
-      className: "md:col-span-2 md:row-span-1",
-    },
-  ];
+const experiences = [
+  {
+    title: "Technologies",
+    content: <TechCarousel />,
+    className: "md:col-span-2 md:row-span-2",
+  },
+  {
+    title: "Education",
+    content: "Computer Science & MIS",
+    className: "md:col-span-1 md:row-span-1",
+  },
+  {
+    title: "Leadership",
+    content: "Tech Club President",
+    className: "md:col-span-1 md:row-span-1",
+  },
+];
 
+const BentoGrid = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
