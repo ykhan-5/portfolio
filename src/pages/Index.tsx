@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import BentoGrid from "@/components/BentoGrid";
+import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 
 const Index = () => {
@@ -10,10 +11,10 @@ const Index = () => {
       <Navbar />
       <Hero />
       <BentoGrid />
+      <Experience />
       <Projects />
     </div>
   );
 };
 
 export default Index;
-

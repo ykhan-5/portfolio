@@ -16,11 +16,6 @@ const BentoGrid = () => {
       className: "md:col-span-1 md:row-span-1",
     },
     {
-      title: "Experience",
-      content: "Software Engineering Intern",
-      className: "md:col-span-1 md:row-span-1",
-    },
-    {
       title: "Leadership",
       content: "Tech Club President",
       className: "md:col-span-1 md:row-span-1",
@@ -42,10 +37,10 @@ const BentoGrid = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-slate-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold font-jakarta text-slate-900 mb-12 text-center">
-          Experience
+          About Me
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
           {experiences.map((exp, index) => (

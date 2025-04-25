@@ -1,4 +1,3 @@
-
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const technologies = [
@@ -11,7 +10,7 @@ const technologies = [
 
 const TechCarousel = () => {
   return (
-    <Carousel className="w-full max-w-lg mx-auto">
+    <Carousel className="w-full max-w-lg mx-auto" opts={{ loop: true }}>
       <CarouselContent>
         {technologies.map((tech, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
